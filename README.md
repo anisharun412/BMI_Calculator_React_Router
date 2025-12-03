@@ -6,60 +6,69 @@ To develop a responsive and interactive Body Mass Index (BMI) Calculator using R
 
 ## DESIGN STEPS
 
-### STEP 1: Initialize React Project
+### **STEP 1: Initialize React Project**
 
-Create a new React app using vite
-    1. npm create vite@latest
-    2. cd "Project-Name"
-    3. npm run dev ( to run the development server)
+Create a new React app using Vite:
 
-### STEP 2: Set Up Routing
+1. `npm create vite@latest`
+2. `cd "Project-Name"`
+3. `npm run dev` (to run the development server)
 
-Create routing structure with react-router-dom:
-    1. Home route (/) – Intro or Navigation
-    2. BMI Calculator route (/bmi)
-    3. Result route (/result)
+### **STEP 2: Set Up Routing**
 
-### STEP 3: Design the BMI Form Page
+Create routing structure with `react-router-dom`:
 
-<li>Create a form to accept Height (in cm or m) and Weight (in kg).</li>
+- Home route: `/` – Intro or Navigation
+- BMI Calculator route: `/bmi`
+- Result route: `/result`
 
-<li>On form submit, navigate to the result page with entered values via URL query params or context/state.</li>
 
-## STEP 4: Handle Input Validation
+### **STEP 3: Design the BMI Form Page**
 
-<li>Check if height and weight are valid numbers.</li>
+- Create a form to accept:
+  - Height (in cm or m)
+  - Weight (in kg)
+- On form submit, navigate to the result page using URL query params or context/state.
 
-<li>Optionally, show error messages for invalid inputs.</li>
+### **STEP 4: Handle Input Validation**
 
-### STEP 5: Perform BMI Calculation
+- Check if height and weight are valid numbers.
+- Optionally, display error messages for invalid inputs.
 
-<li>In the result component:
 
-<li>Extract height and weight from the route (URL or passed state).</li>
+### **STEP 5: Perform BMI Calculation**
 
-<li>Apply the BMI formula:</li>
+In the result component:
 
-![image](https://github.com/user-attachments/assets/ec785506-c96b-489e-8783-fb1a5d36101a)
-​
- 
-<li>Convert height from cm to m if needed.</li></li>
+- Extract height and weight from route (URL or state).
+- Apply the BMI formula:
 
-### STEP 6: Display Result
+    ![image](https://github.com/user-attachments/assets/ec785506-c96b-489e-8783-fb1a5d36101a)
+  
+> BMI = Weight (kg) / Height (m)²
 
-<li>Show calculated BMI.</li>
+- Convert height from cm to meters if needed.
 
-<li>Show category based on BMI range:
 
-<li>Underweight, Normal, Overweight, Obese, etc.</li></li>
+### **STEP 6: Display Result**
 
-### STEP 7: Navigation Options
+- Show calculated BMI.
+- Show BMI category:
+  - Underweight
+  - Normal
+  - Overweight
+  - Obese
+  - etc.
 
-<li>Provide a button to go back to the BMI form to calculate again.</li>
+### **STEP 7: Navigation Options**
 
-### STEP 8: Enhancements
+- Provide a button to return to the BMI form to calculate again.
 
-<li>Add styling using CSS or Tailwind.</li>
+
+### **STEP 8: Enhancements**
+
+- Add styling using CSS or Tailwind CSS.
+
 
 ## PROGRAM
 
